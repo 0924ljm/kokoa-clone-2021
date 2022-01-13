@@ -1,3 +1,7 @@
+.find-screen {
+  margin: 0px var(--horizontal-space);
+  height: 140vh;
+}
 .recommended-friends {
   border-top: var(--main-border);
   border-bottom: var(--main-border);
@@ -10,7 +14,7 @@
 }
 .recommended-friends span {
   display: block;
-  margin: 50px 0px;
+  margin: 80px 0px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
