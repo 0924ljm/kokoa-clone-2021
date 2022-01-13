@@ -1,6 +1,6 @@
 .find-screen {
   margin: 0px var(--horizontal-space);
-  height: 100vh;
+  height: 130vh;
 }
 .recommended-friends {
   border-top: var(--main-border);
