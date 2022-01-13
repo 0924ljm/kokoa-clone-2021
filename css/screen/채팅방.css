@@ -54,6 +54,7 @@
 
 .message-row {
   width: 100%;
+  margin-bottom: 20px;
   display: flex;
   animation: fadeinLeft 0.3s linear forwards;
 }
@@ -101,27 +102,17 @@
     opacity: 1;
   }
 }
-
-.message__me {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  justify-content: flex-start;
+.message-row__own {
+  justify-content: flex-end;
   animation: fadeinRight 0.3s linear forwards;
 }
-.message__me__bubble {
+.message-row__own .message__bubble {
   background-color: rgb(207, 149, 90);
-  padding: 10px 15px;
-  border-radius: 13px;
   border-top-right-radius: 0px;
-  font-size: 18px;
+  border-top-left-radius: 13px;
 }
-.message__me__time {
-  opacity: 0.5;
-  font-size: 13px;
-  margin: 0px 5px;
+.message-row__own .message__info {
+  flex-direction: row-reverse;
 }
 .reply {
   position: fixed;
@@ -187,7 +178,8 @@
   transition: opacity 0.2s ease-in-out;
 }
 
-.reply:focus-within .reply__column:first-child {
+.reply:focus-within i,
+.reply:focus-within button {
   opacity: 0;
 }
 .reply:focus-within input {
@@ -195,4 +187,5 @@
   transform: translateX(-10%);
   font-size: 15px;
   font-weight: 500;
+  height: 40px;
 }
